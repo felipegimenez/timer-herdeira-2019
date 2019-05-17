@@ -1,13 +1,3 @@
-/**********************************************************
-*										 				  *
-* Title    : JavaScript Countdown Clock  				  *
-* Author   : Katherine Adjahoe           				  *
-* Created  : February 18, 2017           				  *
-* Website  : www.preview.manifestare.com/javascript timer *
-* Email    : support@manifestare.com     				  *
-*										 				  *
-***********************************************************/
-
 let countdown;// setInterval function for countdown clock
 let serviceInSession;// seTimeout function for when event is Live
 const clock = document.getElementById('clock');// div that controls the clock container 
@@ -17,7 +7,7 @@ const hoursUnit = document.querySelector('.hours');// span element that displays
 const minutesUnit = document.querySelector('.minutes');// span element that displays the amount of minutes
 const secondsUnit = document.querySelector('.seconds');// span element that displays the amount of seconds
 
-const startDate = new Date(2017, 1, 19, 11, 30, 00).getTime();// initial date and time the countdown clock started from (Year, Month, Day, Hours, Minutes, Seconds,)
+const startDate = new Date(2019, 04, 16, 20, 13, 0).getTime();// initial date and time the countdown clock started from (Year, Month, Day, Hours, Minutes, Seconds,)
 startDate > Date.now() ? timer(startDate) : calculateFutureDate(startDate);// conditional statement that decides if the timer function should start with the start date or calculate another date
 // timer function takes in a date parameter in milliseconds
 function timer(date){
